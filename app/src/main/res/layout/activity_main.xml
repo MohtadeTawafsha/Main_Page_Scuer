@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnSelectPhotos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Photos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/btnSelectVideos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Videos"
+        android:layout_below="@id/btnSelectPhotos"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnEncrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encrypt"
+        android:layout_below="@id/btnSelectVideos"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- ImageView to display the selected photo -->
+    <ImageView
+        android:id="@+id/selectedPhotoImageView"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@id/btnEncrypt"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        />
+
+</RelativeLayout>
